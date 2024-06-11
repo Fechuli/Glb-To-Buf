@@ -8,7 +8,7 @@ function Model() {
   const [model, setModel] = useState(null);
 
   useEffect(() => {
-    fetch("/Jet.buf")
+    fetch("/path/to/file.buf")
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
